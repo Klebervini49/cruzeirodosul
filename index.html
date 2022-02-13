@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/65642183a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Cruzeiro do sul Virtual</title>
+</head>
+
+<body style="font-size: 16px;">
+    <div class="mascaraModal">
+        <div class="modalStart">
+            <i class="fa-solid fa-circle-xmark"
+                style="font-size: 50px; margin-right: 10px; margin-top: 10px; cursor: pointer;"></i>
+        </div>
+    </div>
+
+    <header>
+        <aside class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Estamos por todo Brasil. <span
+                        style="color: #003b76; font-weight: 700; margin-left: 4px;">Encontre
+                        um polo pra você</span></div>
+                <div class="swiper-slide"><span style="color: #003b76; font-weight: 700; margin-left: 4px;">Enfermagem a
+                        distância?</span>
+                    Agora a Cruzeiro Virtual tem.<span
+                        style="color: #003b76; font-weight: 700; margin-left: 4px;">Inscreva-se</span></div>
+                <div class="swiper-slide">Inscrições abertas: <span
+                        style="color: #003b76; font-weight: 700; margin-left: 4px;">Pós-graduação
+                        e Cursos
+                        Livres EAD</span>. Confira as ofertas!</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </aside>
+        <nav class="topNav">
+            <div class="containerNav">
+                <ul class="nav">
+                    <li>
+                        Acessibilidade
+                        <img src="https://www.cruzeirodosulvirtual.com.br/wp-content/themes/cruzeiroportais2019/assets/imagens/svg-icon-contraste.svg"
+                            class="tornarCinza">
+                        <span class="plusFont" style="margin: 0 10px">A+</span>
+                        <span class="lessFont">A-</span>
+                    </li>
+                    <li>Cursos Grátis</li>
+                    <li>Sou Aluno</li>
+                    <li>Sou Ex-Aluno</li>
+                    <li>Outros +</li>
+                    <li>
+                        <input type="text" name="campoPesquisa" placeholder="O que você procura?" id="campoPesquisa">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main1">
+        <div class="swiper mySwiper2" style="margin-top: 0px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img
+                        src="https://www.cruzeirodosulvirtual.com.br/wp-content/uploads/2021/11/20220204_EAD_banner_home_desktop.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="https://www.cruzeirodosulvirtual.com.br/wp-content/uploads/2020/01/CSE-202201-Virtual-Posgraduacao-BannerHome_d_v2.jpg" />
+                </div>
+                <div class="swiper-slide" style="background-color: #252c33;">
+                    <video autoplay muted loop>
+                        <source
+                            src="https://www.cruzeirodosulvirtual.com.br/wp-content/uploads/2020/01/n_virtual_video_desktop.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="swiper-button-next proximoBanner"></div>
+            <div class="swiper-button-prev anteriorBanner">
+            </div>
+        </div>
+        <nav class="main1Nav">
+            <ul>
+                <li>Logo</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="main2">
+        <div class="headerMain">
+            <div class="titleLine">
+                <h1 class="title">Estude na Cruzeiro do Sul Virtual</h1>
+                <hr class="linhaHeader">
+            </div>
+            <p class="infos">Graduação, Segunda Graduação 2.0, Formação Pedagógica, MBA, Especialização, Cursos Livres,
+                Técnicos, de Idiomas e Preparatórios em diversas áreas do conhecimento.
+            </p>
+        </div>
+
+        <div class="parent">
+            <div class="div1">
+                <div>
+
+                </div>
+            </div>
+            <div class="div2">
+
+            </div>
+            <div class="div3">
+
+            </div>
+            <div class="div4">
+
+            </div>
+            <div class="div5">
+
+            </div>
+            <div class="div6">
+
+            </div>
+            <div class="div7">
+
+            </div>
+            <div class="div8">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Script Main -->
+    <script src="script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+            centeredSlides: true,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+            },
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+    </script>
+</body>
+
+</html>
